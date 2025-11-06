@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url("https://wallpapers.com/images/featured/notebook-4k-f7k0g3xufpxxwjk9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: -1;
+}
+
+.container {
+  background: #fff;
+  margin-top: 120px;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: left;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.btn-verde {
+  background-color: #1e7e34;
+}
+
+.btn-azul {
+  background-color: #007bff;
+  margin-right: 5px;
+}
+
+.btn-vermelho {
+  background-color: #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+table th,
+table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+td button {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+    margin-top: 80px;
+    width: 95%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .formulario {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .formulario input {
+    width: 100%;
+    margin-bottom: 10px;
+    min-width: unset;
+  }
+
+  table th,
+  table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    align-items: center;
+  }
+
+  .allelements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    margin-top: 40px;
+    padding: 15px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .formulario {
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .formulario input {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+
+  .btn-azul {
+    background-color: #007bff;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .btn-vermelho {
+    background-color: #dc3545;
+    width: 100%;
+    margin: 5px 0;
+    display: block;
+  }
+
+  .btn-verde {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  table th,
+  table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
