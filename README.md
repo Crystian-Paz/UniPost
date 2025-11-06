@@ -173,3 +173,7 @@ O layout foi desenvolvido em CSS puro, usando:
 💼 Projeto de aplicação web (Django + React)   
 📚 Persistência de dados com SQLite   
 🗓️ 2025
+
+## 🔗 Links
+- **Backend (UniPost_Api)**: [https://github.com/Crystian-Paz/UniPost_Api](https://github.com/Crystian-Paz/UniPost_Api)  
+- **Frontend (UniPost)**: [https://github.com/Crystian-Paz/UniPost](https://github.com/Crystian-Paz/UniPost)
