@@ -60,7 +60,7 @@ UniPost/
     │   └── ...
     └── package.json
 ```
-🧠 Backend – UniPost_Api (Django)
+## 🧠 Backend – UniPost_Api (Django)
 
 O backend é responsável por:
 
@@ -81,7 +81,7 @@ DELETE   /api/alunos/{id}/       Excluir um aluno
 ```
 ---
 
-🧠 Frontend – React
+## 🧠 Frontend – React
 
 O frontend consome os dados da API Django via Axios, oferecendo:
 ```text
