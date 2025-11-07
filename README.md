@@ -166,13 +166,16 @@ O layout foi desenvolvido em CSS puro, usando:
 
 ## 👨‍💻 Desenvolvido por
 
-**Crystian da Paz Silva**
-**Bruno Nogueira da Rocha**
-**Kaique Lemos da Silva**
+- **Crystian da Paz Silva**  
+- **Bruno Nogueira da Rocha**  
+- **Kaique Lemos da Silva**  
+- **Pedro Vinícius de Arruda Barbosa**
+  
+💼 Projeto de aplicação web (Django + React)  
+📚 Persistência de dados com SQLite  
+🗓️ 2025  
 
-💼 Projeto de aplicação web (Django + React)   
-📚 Persistência de dados com SQLite   
-🗓️ 2025
+---
 
 ## 🔗 Links
 - **Backend (UniPost_Api)**: [https://github.com/Crystian-Paz/UniPost_Api](https://github.com/Crystian-Paz/UniPost_Api)  
