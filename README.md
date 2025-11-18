@@ -1,40 +1,50 @@
 # 🧑‍🎓 UniPost – Frontend do Sistema de Alunos
 
 ## 📖 Descrição
-UniPost é a aplicação frontend do sistema de cadastro de alunos, desenvolvida em **React (Vite)**.
+UniPost é a aplicação frontend do sistema de cadastro de alunos, desenvolvida em **React (Vite)** e estilizada com **Tailwind CSS** e **shadcn/ui**.
 
 Esta interface consome a [API do UniPost_Api (backend)](https://github.com/Crystian-Paz/UniPost_Api), permitindo ao usuário cadastrar, listar, editar e excluir alunos. O design é totalmente responsivo, adaptando-se a diferentes dispositivos.
 
 ---
 
 ## 🚀 Funcionalidades
+
 - ✅ Listar alunos cadastrados (consumindo a API)
-- ✅ Cadastrar novos alunos  
-- ✅ Editar informações existentes  
-- ✅ Excluir alunos  
+- ✅ Cadastrar novos alunos
+- ✅ Editar informações existentes
+- ✅ Excluir alunos com diálogo de confirmação
 - ✅ Integração com backend (Django REST Framework) via Axios
-- ✅ Interface responsiva e moderna    
+- ✅ Interface responsiva (Mobile-first)
+- ✅ Notificações (toasts) de sucesso e erro para todas as ações 
 
 ---
 
 ## 🧩 Tecnologias Utilizadas
 
-- React.js (Vite)  
-- HTML5  
-- CSS3 (responsivo)  
-- Axios (para comunicação com a API)  
+- React.js (Vite)
+- Tailwind CSS (Para estilização utilitária e responsividade)
+- Shadcn (Biblioteca de componentes, incluindo Tabela, Input, Botão, Alert Dialog e Sonner)
+- Axios (Para comunicação com a API)
 
 ---
 
 ## ⚙️ Estrutura do Projeto
 
 ```text
-UniPost/
+UniPost/ (Frontend)
 │
 ├── src/
-│   ├── App.jsx
-│   ├── App.css
-│   └── ...
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── button.jsx
+│   │   │   ├── table.jsx
+│   │   │   ├── alert-dialog.jsx
+│   │   │   ├── input.jsx
+│   │   │   └── sonner.jsx
+│   ├── App.jsx         (Lógica principal da aplicação)
+│   └── index.css     (Configuração base do Tailwind)
+│
+├── tailwind.config.js  (Configuração do Tailwind)
 └── package.json
 ```
 
@@ -42,12 +52,14 @@ UniPost/
 
 O frontend consome os dados da API Django via Axios, oferecendo a interface para o usuário.
 
-Pré-requisito: Para que o frontend funcione, o [backend (UniPost_Api)](https://github.com/Crystian-Paz/UniPost_Api) deve estar rodando (normalmente em ```http://127.0.0.1:8000/```).
+**Pré-requisito:** Para que o frontend funcione, o [backend (UniPost_Api)](https://github.com/Crystian-Paz/UniPost_Api) deve estar rodando (normalmente em ```http://127.0.0.1:8000/```).
 
 1️⃣ Clonar o repositório:
+
 ```bash
 git clone https://github.com/Crystian-Paz/UniPost.git
 ```
+
 2️⃣Instalar as dependências:
 
 ```bash
@@ -80,12 +92,8 @@ Todas as instruções para configurar e rodar o backend (API) estão em seu pró
 
 ## 🎨 Layout Responsivo
 
-O layout foi desenvolvido em CSS puro, usando:
+O layout foi totalmente construído com **Tailwind CSS**, garantindo uma interface moderna e responsiva (mobile-first) que se adapta a todos os tamanhos de tela, de celulares a desktops, sem a necessidade de arquivos CSS customizados.
 
-- Flexbox
-- ``@media`` queries
-- Ajustes de fontes e espaçamentos para telas pequenas
-- Suporte completo a iPhone 14 Pro Max, tablets e desktops
 ##
 
 ## 🌐 Arquitetura do Sistema
