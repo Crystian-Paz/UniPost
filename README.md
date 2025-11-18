@@ -121,6 +121,7 @@ O layout foi totalmente construído com **Tailwind CSS**, garantindo uma interfa
 - **Bruno Nogueira da Rocha**  
 - **Kaique Lemos da Silva**  
 - **Pedro Vinícius de Arruda Barbosa**
+- **Matheus Felipe Vilas Boas de Araujo Silva**
 - **Gustavo Teixeira Bione**
   
 💼 Projeto de aplicação web (Django + React)  
